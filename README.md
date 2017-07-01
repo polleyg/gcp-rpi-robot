@@ -6,3 +6,5 @@ This is a project for dojocon 2017 (http://coderdojowa.org.au/dojocon/), 2 ninja
 There are some Python modules needed. Simply run this. `pip install -r requirements.txt`
 
 https://cloud.google.com/vision/docs/reference/libraries#client-libraries-install-python
+
+Archie, Michelle and Graham
