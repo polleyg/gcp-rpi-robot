@@ -10,7 +10,7 @@ Tech stack:
 - Docker
 - Google Cloud Vision API
 - Git
-- Text to Speech API
+- python-espeack
 
 There are some Python modules needed. Simply run this: `pip install -r requirements.txt`
 
@@ -19,6 +19,7 @@ Before doing anything run these commands on the terminal:
 - `sudo apt-get update`
 - `sudo apt-get install python-dev`
 - `sudo pip install --upgrade pip`
+- `sudo apt-get install python-espeak`
 
 https://cloud.google.com/vision/docs/reference/libraries#client-libraries-install-python
 
