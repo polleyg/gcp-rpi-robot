@@ -4,4 +4,4 @@
 2. Write code that controls the robot
 
 Extensions:
-	1. Make an API that allows computers to remotely control the robot.
+1. Make an API that allows computers to remotely control the robot.
