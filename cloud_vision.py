@@ -1,5 +1,6 @@
 import io
 import os
+import pyttsx
 
 from google.cloud import vision
 
@@ -11,6 +12,8 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "cloud_vision_key.json"
 camera = PiCamera()
 
 vision_client = vision.Client()
+
+engine = pyttsx.init()
 
 camera.rotation = 180
 camera.start_preview()
@@ -28,4 +31,7 @@ labels = image.detect_labels()
 
 print('Labels:')
 for label in labels:
-	print(label.description) 
+	print(label.description)
+	engine.say("I think this is " + label.description)
+
+engine.runAndWait()
