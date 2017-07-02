@@ -6,7 +6,7 @@ This is a project for dojocon 2017 (http://coderdojowa.org.au/dojocon/), 2 ninja
 Tech stack:
 
 - Python 2.7.9
-- Raspberyy-Pi (model 2B)
+- Raspbery-Pi (model 2B)
 - Docker
 - Google Cloud Vision API
 - Git
