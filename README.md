@@ -5,4 +5,6 @@ This is an extension to a project for dojocon 2017 (http://coderdojowa.org.au/do
 
 Right now this server is just a WIP and shouldn't be merged with the main branch. Some features haven't been moved over yet. Like taking pictures and identifying for example.
 
+ALERT: This code is untested. So if it doesn't work please alert mewith the error!
+
 Archie, Michelle and Graham
