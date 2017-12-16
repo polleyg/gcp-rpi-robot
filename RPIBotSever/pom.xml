@@ -14,11 +14,6 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.18.Final</version>
         </dependency>
-        <dependency>
-            <groupId>com.dexterind</groupId>
-            <artifactId>gopigo</artifactId>
-            <version>1.2</version>
-        </dependency>
     </dependencies>
 
    <build>
