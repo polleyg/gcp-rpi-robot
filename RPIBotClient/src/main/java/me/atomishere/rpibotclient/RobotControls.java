@@ -32,4 +32,12 @@ class RobotControls implements IRobotControls {
     public void decelerate() {
         RpiBotClient.setData(0x06);
     }
+
+    public void takePictureAndIdentify() {
+        RpiBotClient.setData(0x07);
+    }
+
+    public void takePictureAndIdentifyText() {
+        RpiBotClient.setData(0x08);
+    }
 }

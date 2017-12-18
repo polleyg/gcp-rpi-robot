@@ -10,8 +10,6 @@ import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 
-
-
 /**
  * Created by archieoconnor on 16/12/17.
  */
@@ -61,7 +59,7 @@ public class RpiBotClient {
 
                 lastWriteFuture = ch.write(data);
 
-                if(data.equals(0x07)) {
+                if(data.equals(0x09)) {
                     ch.closeFuture().sync();
                     break;
                 }
@@ -77,10 +75,19 @@ public class RpiBotClient {
     }
 
     /**
+     * Get the instance of the client
+     *
+     * @return the client.
+     */
+    public static RpiBotClient getInstance() {
+        return instance;
+    }
+
+    /**
      * Disconnect the client from the server
      */
     public void disconnect() {
-        setData(0x07);
+        setData(0x09);
     }
 
     static void setData(Integer data) {

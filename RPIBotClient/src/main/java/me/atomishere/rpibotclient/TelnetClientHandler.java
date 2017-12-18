@@ -6,11 +6,11 @@ import io.netty.channel.SimpleChannelInboundHandler;
 /**
  * Created by archieoconnor on 16/12/17.
  */
-public class TelnetClientHandler extends SimpleChannelInboundHandler<Integer> {
+class TelnetClientHandler extends SimpleChannelInboundHandler<Integer> {
 
     @Override
     public void channelRead0(ChannelHandlerContext channelHandlerContext, Integer integer) throws Exception {
-        if(integer.equals(0x09)) {
+        if(integer.equals(0x11)) {
             System.err.println("The client sent an invalid packet to the sever!");
         }
     }

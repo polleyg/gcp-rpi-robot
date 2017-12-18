@@ -12,7 +12,7 @@ import io.netty.handler.ssl.SslContext;
 /**
  * Created by archieoconnor on 16/12/17.
  */
-public class TelnetClientInitializer extends ChannelInitializer<SocketChannel> {
+class TelnetClientInitializer extends ChannelInitializer<SocketChannel> {
     private static final StringEncoder ENCODER = new StringEncoder();
     private static final StringDecoder DECODER = new StringDecoder();
 

@@ -38,4 +38,14 @@ public interface IRobotControls {
      * Decelerate the robot.
      */
     void decelerate();
+
+    /**
+     * Take a picture and identify.
+     */
+    void takePictureAndIdentify();
+
+    /**
+     * Take a picture and identify text.
+     */
+    void takePictureAndIdentifyText();
 }
